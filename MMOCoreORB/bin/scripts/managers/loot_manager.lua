@@ -45,18 +45,18 @@ levelChance = 100
 
 --Chance dividend for attribute bonus modifiers
 baseChance = 100
-yellowChance = 1000
-exceptionalChance = 100000
-legendaryChance = 1000000
+yellowChance = 100 --1000
+exceptionalChance = 0 --100000
+legendaryChance = 0 --1000000
 
 --Multiplier values for bonus modifiers
 baseModifier = 1
-yellowModifier = 1.5
+yellowModifier = 5.0 --1.5
 exceptionalModifier = 2.5
 legendaryModifier = 5.0
 
 --The chance for random skill mods to be on looted weapons/wearables
-skillModChance = 500 -- 1 in 500
+skillModChance = 1 --500 -- 1 in 500
 
 -- Value ranges for random dots on looted weapons (chance is set individually on the loot items)
 randomDotAttribute = {0, 8} -- See CreatureAttributes.h in src for numbers.
