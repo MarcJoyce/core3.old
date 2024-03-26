@@ -271,7 +271,7 @@ bool SkillManager::awardSkill(const String& skillName, CreatureObject* creature,
 
 	if (ghost != nullptr) {
 		//Withdraw skill points.
-		ghost->addSkillPoints(-skill->getSkillPointsRequired());
+		//ghost->addSkillPoints(-skill->getSkillPointsRequired());
 
 		//Witdraw experience.
 		if (!noXpRequired) {
@@ -448,7 +448,7 @@ bool SkillManager::surrenderSkill(const String& skillName, CreatureObject* creat
 
 	if (ghost != nullptr) {
 		//Give the player the used skill points back.
-		ghost->addSkillPoints(skill->getSkillPointsRequired());
+		//ghost->addSkillPoints(skill->getSkillPointsRequired());
 
 		//Remove abilities but only if the creature doesn't still have a skill that grants the
 		//ability.  Some abilities are granted by multiple skills. For example Dazzle for dancers
@@ -588,7 +588,7 @@ void SkillManager::surrenderAllSkills(CreatureObject* creature, bool notifyClien
 
 			if (ghost != nullptr) {
 				//Give the player the used skill points back.
-				ghost->addSkillPoints(skill->getSkillPointsRequired());
+				//ghost->addSkillPoints(skill->getSkillPointsRequired());
 
 				//Remove abilities
 				auto abilityNames = skill->getAbilities();
