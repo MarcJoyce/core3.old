@@ -364,8 +364,8 @@ TangibleObject* LootManagerImplementation::createLootObject(TransactionLog& trx,
 	trx.addState("lootAdjustment", adjustment);
 
 	if (System::random(legendaryChance) >= legendaryChance - adjustment) {
-		UnicodeString newName = prototype->getDisplayedName() + " (Legendary)";
-		prototype->setCustomObjectName(newName, false);
+		//UnicodeString newName = prototype->getDisplayedName() + " (Legendary)";
+		//prototype->setCustomObjectName(newName, false);
 
 		excMod = legendaryModifier;
 
@@ -374,8 +374,8 @@ TangibleObject* LootManagerImplementation::createLootObject(TransactionLog& trx,
 		legendaryLooted.increment();
 		trx.addState("lootIsLegendary", true);
 	} else if (System::random(exceptionalChance) >= exceptionalChance - adjustment) {
-		UnicodeString newName = prototype->getDisplayedName() + " (Exceptional)";
-		prototype->setCustomObjectName(newName, false);
+		//UnicodeString newName = prototype->getDisplayedName() + " (Exceptional)";
+		//prototype->setCustomObjectName(newName, false);
 
 		excMod = exceptionalModifier;
 
