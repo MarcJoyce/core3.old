@@ -889,7 +889,7 @@ void MissionManagerImplementation::randomizeGenericDestroyMission(CreatureObject
 	else
 		missionType = "_creature";
 
-	mission->setMissionTitle("mission/mission_destroy_neutral" + messageDifficulty + missionType, "m" + String::valueOf(randTexts) + "t");
+	mission->setMissionTitle("", mobileName.replaceAll("_", " ") + groupSuffix);//("mission/mission_destroy_neutral" + messageDifficulty + missionType, "m" + String::valueOf(randTexts) + "t");
 	mission->setMissionDescription("mission/mission_destroy_neutral" +  messageDifficulty + missionType, "m" + String::valueOf(randTexts) + "d");
 
 	switch (faction) {
