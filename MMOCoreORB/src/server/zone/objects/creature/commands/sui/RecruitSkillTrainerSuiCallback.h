@@ -158,13 +158,13 @@ public:
 		case 32: trainerTemplatePath = "trainer_weaponsmith";
 				break;
 
-		case 32: trainerTemplatePath = "informant_npc_lvl_1";
+		case 33: trainerTemplatePath = "informant_npc_lvl_1";
 				break;
 
-		case 32: trainerTemplatePath = "informant_npc_lvl_2";
+		case 34: trainerTemplatePath = "informant_npc_lvl_2";
 				break;
 
-		case 32: trainerTemplatePath = "informant_npc_lvl_3";		
+		case 35: trainerTemplatePath = "informant_npc_lvl_3";		
 
 		}
 
