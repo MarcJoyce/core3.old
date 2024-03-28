@@ -322,7 +322,8 @@ end
 
 function JediTrials:setStartedTrials(pPlayer)
 	if (self:isEligibleForPadawanTrials(pPlayer)) then
-		writeScreenPlayData(pPlayer, "PadawanTrials", "startedTrials", 1)
+		awardSkill(pPlayer, "force_title_jedi_rank_02")//writeScreenPlayData(pPlayer, "PadawanTrials", "startedTrials", 1)
+		writeScreenPlayData(pPlayer, "PadawanTrials", "completedTrials", 1)
 	elseif (self:isEligibleForKnightTrials(pPlayer)) then
 		writeScreenPlayData(pPlayer, "KnightTrials", "startedTrials", 1)
 	end
