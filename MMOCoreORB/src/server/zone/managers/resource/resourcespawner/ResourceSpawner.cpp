@@ -826,11 +826,11 @@ void ResourceSpawner::sendSurvey(CreatureObject* player, const String& resname) 
 	int toolRange = surveyTool->getRange(player);
 	int points = surveyTool->getPoints();
 
-	if (toolRange > 3200 || toolRange < 0)
-		toolRange = 320;
+	if (toolRange > 2624 || toolRange < 0)
+		toolRange = 2624;
 
 	if (points <= 0 || points > 20)
-		points =  3;
+		points =  5;
 
 	float spacer = float(toolRange) / float(points - 1);
 
