@@ -2144,7 +2144,7 @@ void PlayerManagerImplementation::disseminateExperience(TangibleObject* destruct
 
 			awardExperience(attackerCreo, "combat_general", combatXp, true, 0.1f);
 
-			if (xpType = "jedi_general") {
+			/*if (xpType = "jedi_general") {
 			
 				if (creature->hasSkill("force_rank_dark_novice")
 					awardExperience(attackerCreo, "force_rank_xp", xpAmount, true, 0.01f);
@@ -2152,7 +2152,7 @@ void PlayerManagerImplementation::disseminateExperience(TangibleObject* destruct
 				if (creature->hasSkill("force_rank_light_novice")
 					awardExperience(attackerCreo, "force_rank_xp", xpAmount, true, 0.01f);
 
-			}
+			}*/
 
 
 			//Check if the group leader is a squad leader
