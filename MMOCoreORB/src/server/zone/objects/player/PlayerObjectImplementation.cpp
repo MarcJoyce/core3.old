@@ -695,7 +695,7 @@ int PlayerObjectImplementation::addExperience(TransactionLog& trx, const String&
 	if (xp > xpCap) {
 		valueToAdd = xpCap - (xp - valueToAdd);
 		xp = xpCap;
-	}/
+	}*/
 
 	if (notifyClient) {
 		PlayerObjectDeltaMessage8* dplay8 = new PlayerObjectDeltaMessage8(this);
