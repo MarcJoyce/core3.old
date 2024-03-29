@@ -47,6 +47,9 @@ TauntCommand = {
 	effectString = "clienteffect/combat_special_attacker_taunt.cef",
 	poolsToDamage = NO_ATTRIBUTE,
 
+	areaAction = true,
+	areaRange = 16,
+
 	range = 64
 }
 
