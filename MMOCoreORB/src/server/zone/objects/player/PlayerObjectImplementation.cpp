@@ -683,9 +683,10 @@ int PlayerObjectImplementation::addExperience(TransactionLog& trx, const String&
 		}
 	}
 
-	int xpCap = -1;
+	int xpCap = 10000000;
+	
 
-	if (xpTypeCapList.contains(xpType))
+	/*if (xpTypeCapList.contains(xpType))
 		xpCap = xpTypeCapList.get(xpType);
 
 	if (xpCap < 0)
@@ -694,7 +695,7 @@ int PlayerObjectImplementation::addExperience(TransactionLog& trx, const String&
 	if (xp > xpCap) {
 		valueToAdd = xpCap - (xp - valueToAdd);
 		xp = xpCap;
-	}
+	}/
 
 	if (notifyClient) {
 		PlayerObjectDeltaMessage8* dplay8 = new PlayerObjectDeltaMessage8(this);
