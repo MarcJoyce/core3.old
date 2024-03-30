@@ -116,27 +116,30 @@ function PadawanTrials:startNextPadawanTrial(pObject, pPlayer)
 	if (pPlayer == nil) then
 		return
 	end
+	
+	JediTrials:unlockJediPadawan(pPlayer)
+	return
 
-	local trialsCompleted = JediTrials:getTrialsCompleted(pPlayer)
+	--local trialsCompleted = JediTrials:getTrialsCompleted(pPlayer)
 
-	if (trialsCompleted == #padawanTrialQuests) then
-		JediTrials:unlockJediPadawan(pPlayer)
-		return
-	elseif (trialsCompleted == 7) then
-		local trialNum = self:getSaberCraftingTrialNumber()
-		self:startTrial(pPlayer, trialNum)
-	else
-		local incompleteTrials = {}
-		for i = 1, #padawanTrialQuests, 1 do
-			local trialState = JediTrials:getTrialStateName(pPlayer, i)
-			if not CreatureObject(pPlayer):hasScreenPlayState(1, trialState) and padawanTrialQuests[i].trialType ~= TRIAL_LIGHTSABER then
-				table.insert(incompleteTrials, i)
-			end
-		end
+	--if (trialsCompleted == #padawanTrialQuests) then
+	--	JediTrials:unlockJediPadawan(pPlayer)
+	--	return
+	--elseif (trialsCompleted == 7) then
+	--	local trialNum = self:getSaberCraftingTrialNumber()
+	--	self:startTrial(pPlayer, trialNum)
+	--else
+	--	local incompleteTrials = {}
+	--	for i = 1, #padawanTrialQuests, 1 do
+	--		local trialState = JediTrials:getTrialStateName(pPlayer, i)
+	--		if not CreatureObject(pPlayer):hasScreenPlayState(1, trialState) and padawanTrialQuests[i].trialType ~= TRIAL_LIGHTSABER then
+	--			table.insert(incompleteTrials, i)
+	--		end
+	--	end
 
-		local rand = getRandomNumber(1, #incompleteTrials)
-		local randTrial = incompleteTrials[rand]
-		self:startTrial(pPlayer, randTrial)
+	--	local rand = getRandomNumber(1, #incompleteTrials)
+	--	local randTrial = incompleteTrials[rand]
+	--	self:startTrial(pPlayer, randTrial)
 	end
 end
 
