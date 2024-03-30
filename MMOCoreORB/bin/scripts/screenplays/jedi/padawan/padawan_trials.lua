@@ -116,7 +116,7 @@ function PadawanTrials:startNextPadawanTrial(pObject, pPlayer)
 	if (pPlayer == nil) then
 		return
 	end
-	
+	awardSkill(pPlayer, "force_title_jedi_rank_01")
 	JediTrials:unlockJediPadawan(pPlayer)
 	return
 
