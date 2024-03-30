@@ -141,7 +141,7 @@ function PadawanTrials:startNextPadawanTrial(pObject, pPlayer)
 	--	local rand = getRandomNumber(1, #incompleteTrials)
 	--	local randTrial = incompleteTrials[rand]
 	--	self:startTrial(pPlayer, randTrial)
-	end
+	--end
 end
 
 function PadawanTrials:getSaberCraftingTrialNumber()
