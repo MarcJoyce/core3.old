@@ -38,7 +38,7 @@ function ForceShrineMenuComponent:doMeditate(pObject, pPlayer)
 
 	if (not CreatureObject(pPlayer):hasSkill("force_title_jedi_rank_02") and CreatureObject(pPlayer):hasScreenPlayState(32, "VillageJediProgression")) then
 		--local currentTrial = JediTrials:getCurrentTrial(pPlayer)
-		JediTrials:unlockJediPadawan(pObject, pPlayer)
+		JediTrials:unlockJediPadawan(pPlayer)
 		
 		--if (not JediTrials:isOnPadawanTrials(pPlayer)) then
 		--	PadawanTrials:startPadawanTrials(pObject, pPlayer)
