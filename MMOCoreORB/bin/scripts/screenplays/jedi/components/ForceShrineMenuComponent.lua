@@ -46,7 +46,7 @@ function ForceShrineMenuComponent:doMeditate(pObject, pPlayer)
 		--	PadawanTrials:startNextPadawanTrial(pObject, pPlayer)
 		--else
 		--	PadawanTrials:showCurrentTrial(pObject, pPlayer)
-		end
+		--end
 	elseif (JediTrials:isOnKnightTrials(pPlayer)) then
 		local pPlayerShrine = KnightTrials:getTrialShrine(pPlayer)
 
