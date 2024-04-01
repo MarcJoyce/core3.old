@@ -238,7 +238,7 @@ void GeneticComponentImplementation::updateCraftingValues(CraftingValues* values
 #endif
 
 	// Calculate damage
-	float damage = (power * 0.8f) / 10.0f;
+	float damage = (power * 0.8f) / 5.0f;
 
 	// Calculate damage variable
 	float damageVar = ((power / 10000.0f) * 2.0f);
