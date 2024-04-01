@@ -2140,6 +2140,12 @@ void PlayerManagerImplementation::disseminateExperience(TangibleObject* destruct
 
 				//Award individual expType
 				awardExperience(attackerCreo, xpType, xpAmount);
+
+				//Award FRS xp to Jedi Knights
+				if (creature->hasSkill("force_title_jedi_rank_03") && xpType == "jedi_general") {
+					float forceRankXPAmount = xpAmount * 0.005f;
+					awardExperience(attackerCreo, "force_rank_xp", forceRankXPAmount);
+				}
 			}
 
 			awardExperience(attackerCreo, "combat_general", combatXp, true, 0.1f);
