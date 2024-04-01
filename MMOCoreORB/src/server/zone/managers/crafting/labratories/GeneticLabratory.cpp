@@ -89,8 +89,8 @@ void GeneticLabratory::recalculateResistances(CraftingValues* craftingValues, fl
 	float fortitude = craftingValues->getCurrentValue("fortitude");
 
 		// Reset effective resists if fortitude breaks 500
-	if (fortitude < 500 && fortitude + fortDiff >= 500) {
-		armorReset = true;
+	//if (fortitude < 500 && fortitude + fortDiff >= 500) {
+		//armorReset = true;
 	}
 
 	float effectivenessBonus = (fortDiff / 1000.f) * 100.f;
