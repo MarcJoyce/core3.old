@@ -210,10 +210,10 @@ function RecruiterConvoHandler:runScreenHandlers(pConvTemplate, pPlayer, pNpc, s
 		writeData(CreatureObject(pPlayer):getObjectID() .. ":changingFactionStatus", 1)
 		createEvent(1000, "recruiterScreenplay", "handleGoOvert", pPlayer, "")
 	elseif (screenID == "covert_complete") then
-		if (CreatureObject(pPlayer):hasSkill("force_rank_light_novice") or CreatureObject(pPlayer):hasSkill("force_rank_dark_novice")) then
-			CreatureObject(pPlayer):sendSystemMessage("@faction_recruiter:jedi_cant_go_covert")
-			return
-		end
+		--if (CreatureObject(pPlayer):hasSkill("force_rank_light_novice") or CreatureObject(pPlayer):hasSkill("force_rank_dark_novice")) then
+		--	CreatureObject(pPlayer):sendSystemMessage("@faction_recruiter:jedi_cant_go_covert")
+		--	return
+		--end
 
 		if (SceneObject(pPlayer):hasPendingTask("recruiterScreenplay", "handleGoCovert")) then
 			SceneObject(pPlayer):cancelPendingTask("recruiterScreenplay", "handleGoCovert")
