@@ -884,12 +884,14 @@ void MissionManagerImplementation::randomizeGenericDestroyMission(CreatureObject
 	else
 		messageDifficulty = "_hard";
 
-	if (lairTemplateObject->getMobType() == LairTemplate::NPC)
+	if (lairTemplateObject->getMobType() == LairTemplate::NPC){
 		missionType = "_npc";
 		groupSuffix =" camp.";
-	else
+	}
+	else {
 		missionType = "_creature";
 		groupSuffix = " lair.";
+	}
 	
 	const VectorMap<String, int>* mobiles = lairTemplateObject->getMobiles();
 	String mobileName ="mysterious";
