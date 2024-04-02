@@ -884,6 +884,8 @@ void MissionManagerImplementation::randomizeGenericDestroyMission(CreatureObject
 	else
 		messageDifficulty = "_hard";
 
+	String groupSuffix;
+
 	if (lairTemplateObject->getMobType() == LairTemplate::NPC){
 		missionType = "_npc";
 		groupSuffix =" camp.";
