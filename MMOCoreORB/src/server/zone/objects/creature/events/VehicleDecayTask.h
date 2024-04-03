@@ -15,7 +15,7 @@ class VehicleDecayTask : public Task {
 public:
 	VehicleDecayTask(TangibleObject* veh) : Task() {
 		vehicleObj = veh;
-		initialDecay = true;
+		initialDecay = false;
 	}
 
 	void run() {
@@ -41,7 +41,7 @@ public:
 		int decayRate = vehicleTemplate->getDecayRate();
 
 		if (decayRate == 0)
-			decayRate = 15;
+			decayRate = 1;
 
 		if (initialDecay) {
 			vehicle->inflictDamage(vehicle, 0, decayRate / 2, true);
