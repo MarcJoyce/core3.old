@@ -262,6 +262,7 @@ void EntertainingSessionImplementation::doPerformanceAction() {
 	}
 
 	int actionDrain = entertainer->calculateCostAdjustment(CreatureAttribute::QUICKNESS, performance->getActionPointsPerLoop());
+	actionDrain = actionDrain / 3;
 
 	if (entertainer->getHAM(CreatureAttribute::ACTION) <= actionDrain) {
 		if (isDancing()) {
@@ -645,7 +646,7 @@ void EntertainingSessionImplementation::doFlourish(int flourishNumber, bool gran
 
 	ManagedReference<Instrument*> instrument = entertainer->getPlayableInstrument();
 
-	float baseActionDrain = performance->getActionPointsPerLoop() - (int)(entertainer->getHAM(CreatureAttribute::QUICKNESS)/20.f);
+	float baseActionDrain = performance->getActionPointsPerLoop() - (int)(entertainer->getHAM(CreatureAttribute::QUICKNESS)/35.f);
 
 	if (baseActionDrain < 0)
 		baseActionDrain = 0;
