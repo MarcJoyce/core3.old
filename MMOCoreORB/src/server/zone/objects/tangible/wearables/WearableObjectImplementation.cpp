@@ -226,21 +226,21 @@ String WearableObjectImplementation::repairAttempt(int repairChance) {
 		message += "sys_repair_failed";
 		//setMaxCondition(1, true);
 		//setConditionDamage(0, true);
-		setConditionDamage(getMaxCondition() * 0.25f, true)
+		setConditionDamage(getMaxCondition() * 0.25f, true);
 	} else if(repairChance < 50) {
 		message += "sys_repair_imperfect";
 		//setMaxCondition(getMaxCondition() * .65f, true);
 		//setConditionDamage(0, true);
-		setConditionDamage(getMaxCondition() * 0.5f, true)
+		setConditionDamage(getMaxCondition() * 0.5f, true);
 	} else if(repairChance < 75) {
 		//setMaxCondition(getMaxCondition() * .80f, true);
 		//setConditionDamage(0, true);
-		setConditionDamage(getMaxCondition() * 0.75f, true)
+		setConditionDamage(getMaxCondition() * 0.75f, true);
 		message += "sys_repair_slight";
 	} else {
 		//setMaxCondition(getMaxCondition() * .95f, true);
 		//setConditionDamage(0, true);
-		setConditionDamage(getMaxCondition() * 1.0f, true)
+		setConditionDamage(getMaxCondition() * 1.0f, true);
 		message += "sys_repair_perfect";
 	}
 
