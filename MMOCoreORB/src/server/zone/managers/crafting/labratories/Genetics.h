@@ -427,7 +427,7 @@ public:
 		resistanceLevel += resistMath(pet->getStun(), armorRating, eff, false, 2.0, 1);
 		level += ((float)resistanceLevel) / 10.0;
 		if (level >35)
-			level = 35
+			level = 35;
 		return level;
 	}
 
