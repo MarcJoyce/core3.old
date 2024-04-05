@@ -1269,7 +1269,7 @@ PatrolPoint PetControlDeviceImplementation::getPatrolPoint(int idx) {
 bool PetControlDeviceImplementation::isValidPet(AiAgent* pet) {
 	PetDeed* deed = pet->getPetDeed();
 
-	if (deed != nullptr) {
+	/*if (deed != nullptr) {
 		// time to calculate!
 		int calculatedLevel =  deed->calculatePetLevel();
 
@@ -1278,7 +1278,7 @@ bool PetControlDeviceImplementation::isValidPet(AiAgent* pet) {
 		} else {
 			return false;
 		}
-	}
+	}*/
 
 	return true;
 }
