@@ -363,7 +363,7 @@ void PetDeedImplementation::updateCraftingValues(CraftingValues* values, bool fi
 		}
 
 		// Calculate and set level
-		level = Genetics::calculatePetLevel(component);
+		level = 35;//Genetics::calculatePetLevel(component);
 	}
 
 	CreatureTemplateManager* creatureTemplateManager = CreatureTemplateManager::instance();
