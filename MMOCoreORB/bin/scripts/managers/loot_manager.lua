@@ -467,7 +467,7 @@ lootableClothingStatMods = {
 	--"thrown_accuracy",
 	--"thrown_speed",
 	"twohandmelee_accuracy",
-	"twohandmelee_damage",
+	--"twohandmelee_damage",
 	"twohandmelee_speed",
 	"unarmed_accuracy",
 	"unarmed_damage",
