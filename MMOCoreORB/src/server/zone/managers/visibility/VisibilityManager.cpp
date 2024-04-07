@@ -22,6 +22,9 @@ float VisibilityManager::calculateVisibilityIncrease(CreatureObject* creature) {
 	if (zone == nullptr)
 		return visibilityIncrease;
 
+	if (creature->getFactionStatus() != FactionStatus::OVERT) {
+		return visibilityIncrease;
+	}
 
 	SortedVector<TreeEntry*> closeObjects;
 	CloseObjectsVector* closeObjectsVector = (CloseObjectsVector*) creature->getCloseObjects();
