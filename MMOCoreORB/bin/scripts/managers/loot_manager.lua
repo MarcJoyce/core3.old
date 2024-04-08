@@ -118,7 +118,7 @@ lootableArmorAttachmentStatMods = {
 	"resistance_fire",
 	"resistance_poison",
 	"rifle_accuracy",
-	"rifle_aim",
+	--"rifle_aim",
 	"rifle_hit_while_moving",
 	"rifle_speed",
 	"slope_move",
