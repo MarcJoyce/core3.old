@@ -563,7 +563,7 @@ void GroupObjectImplementation::calculateGroupLevel() {
 				ManagedReference<PetControlDevice*> pcd = member->getControlDevice().get().castTo<PetControlDevice*>();
 
 				if (pcd != nullptr && pcd->getPetType() == PetManager::FACTIONPET) {
-					factionPetLevel += member->getLevel() / 5;
+					factionPetLevel += member->getLevel() / 2;
 				}
 
 				groupLevel += member->getLevel() / 5;
